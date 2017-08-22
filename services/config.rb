@@ -17,7 +17,7 @@ coreo_agent_audit_rule 'echo-hello-1' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -37,7 +37,7 @@ coreo_agent_audit_rule 'echo-hello-2' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -57,7 +57,7 @@ coreo_agent_audit_rule 'echo-hello-3' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -77,7 +77,7 @@ coreo_agent_audit_rule 'echo-hello-4' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -97,7 +97,7 @@ coreo_agent_audit_rule 'echo-hello-5' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -117,7 +117,7 @@ coreo_agent_audit_rule 'echo-hello-6' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -137,7 +137,7 @@ coreo_agent_audit_rule 'echo-hello-7' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -157,7 +157,7 @@ coreo_agent_audit_rule 'echo-hello-8' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -177,7 +177,7 @@ coreo_agent_audit_rule 'echo-hello-9' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -197,7 +197,7 @@ coreo_agent_audit_rule 'echo-hello-10' do
   suggested_action 'Make sure hello is the output.'
   level 'low'
   selectors ['check-echo']
-  timeout 30
+  timeout 60
   control 'echo-hello' do
     impact 1.0
     describe command('echo hello') do
@@ -232,7 +232,7 @@ coreo_agent_audit_rule 'env-user-password' do
       its('stdout') { should_not match(/^USER_PWD=/) }
     end
   end
-  timeout 30
+  timeout 60
 end
 
 coreo_agent_selector_rule 'check-linux' do
